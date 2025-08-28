@@ -3,51 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emprendimiento de Tuna</title>
+  <title>Dulce Vida Andina</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fdf6f0; color: #333; }
-    header { background: #8cc63f; color: white; padding: 1rem; text-align: center; }
-    h1 { margin: 0; font-size: 2rem; }
-    .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; padding: 2rem; }
-    .card { background: white; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.2s; }
-    .card:hover { transform: scale(1.03); }
-    .card img { width: 100%; height: 200px; object-fit: cover; }
-    .card h2 { margin: 0.5rem; color: #8cc63f; font-size: 1.2rem; }
-    .card p { margin: 0.5rem 1rem 1rem; font-size: 0.95rem; }
-    .whatsapp { display: block; width: fit-content; margin: 2rem auto; background: #25d366; color: white; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
-    .whatsapp:hover { background: #20b954; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background: #e85d04;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      background: #9d0208;
+      text-align: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .producto {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .producto img {
+      max-width: 100%;
+      border-radius: 10px;
+      height: 160px;
+      object-fit: cover;
+    }
+    .producto h3 {
+      color: #9d0208;
+      margin: 0.5rem 0;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #e85d04;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #d00000;
+    }
+    section {
+      margin-top: 3rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f8edeb;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Productos de Tuna</h1>
-    <p>Frescos, naturales y saludables</p>
+    <h1>Dulce Vida Andina</h1>
+    <p>Sabores tradicionales de la sierra en cada bocado</p>
   </header>
 
-  <main class="container">
-    <div class="card">
-      <img src="assets/img/mazamorra-tuna.jpg" alt="Mazamorra de Tuna">
-      <h2>Mazamorra de Tuna</h2>
-      <p>Un postre tradicional elaborado con la pulpa fresca de tuna, ideal para disfrutar en familia.</p>
-    </div>
-    <div class="card">
-      <img src="assets/img/mermelada-tuna.jpg" alt="Mermelada de Tuna">
-      <h2>Mermelada de Tuna</h2>
-      <p>Natural y deliciosa, perfecta para acompañar panes, tostadas o postres.</p>
-    </div>
-    <div class="card">
-      <img src="assets/img/helado-tuna.jpg" alt="Helado de Tuna">
-      <h2>Helado de Tuna</h2>
-      <p>Refrescante y saludable, elaborado artesanalmente con frutas seleccionadas.</p>
-    </div>
-    <div class="card">
-      <img src="assets/img/chupete-tuna.jpg" alt="Chupete de Tuna">
-      <h2>Chupete de Tuna</h2>
-      <p>Un dulce casero y refrescante, ideal para los días calurosos.</p>
-    </div>
-  </main>
+  <nav>
+    <a href="#productos">Productos</a>
+    <a href="#nosotros">Quiénes somos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-  <a href="https://wa.me/51935112049" class="whatsapp" target="_blank">📲 Pedir por WhatsApp</a>
+  <div class="container">
+    <section id="productos">
+      <h2>Nuestros Productos</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="img/mermelada.jpg" alt="Mermelada de Tuna">
+          <h3>Mermelada de Tuna</h3>
+          <p>Elaborada artesanalmente con fruta fresca, ideal para acompañar tus desayunos.</p>
+          <a href="https://wa.me/51935112049" class="btn">Pedir por WhatsApp</a>
+        </div>
+        <div class="producto">
+          <img src="img/chupetes.jpg" alt="Chupetes de Tuna">
+          <h3>Chupetes de Tuna</h3>
+          <p>Refrescantes heladitos naturales, perfectos para días soleados.</p>
+          <a href="https://wa.me/51935112049" class="btn">Pedir por WhatsApp</a>
+        </div>
+        <div class="producto">
+          <img src="https://dummyimage.com/400x300/ccc/fff.png&text=Mazamorra" alt="Mazamorra de Tuna">
+          <h3>Mazamorra de Tuna</h3>
+          <p>Un postre tradicional lleno de sabor andino, servido caliente o frío.</p>
+          <a href="https://wa.me/51935112049" class="btn">Pedir por WhatsApp</a>
+        </div>
+        <div class="producto">
+          <img src="https://dummyimage.com/400x300/ccc/fff.png&text=Raspadilla" alt="Raspadilla de Tuna">
+          <h3>Raspadilla de Tuna</h3>
+          <p>Bebida refrescante hecha a base de jugo de tuna natural.</p>
+          <a href="https://wa.me/51935112049" class="btn">Pedir por WhatsApp</a>
+        </div>
+      </div>
+    </section>
 
+    <section id="nosotros">
+      <h2>¿Quiénes somos?</h2>
+      <p>
+        En <strong>Dulce Vida Andina</strong> rescatamos lo mejor de la tradición andina
+        para llevar a tu mesa productos únicos y llenos de sabor. Trabajamos con frutas locales
+        y recetas artesanales que reflejan nuestra herencia cultural.
+      </p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>WhatsApp: <a href="https://wa.me/51935112049">+51 935 112 049</a></p>
+      <p>Email: dulcevidaandina@gmail.com</p>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 - Dulce Vida Andina | Todos los derechos reservados
+  </footer>
 </body>
 </html>
