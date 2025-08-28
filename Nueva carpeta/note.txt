@@ -1,0 +1,3 @@
+
+Disable anti-virus
+Always run as administrator
